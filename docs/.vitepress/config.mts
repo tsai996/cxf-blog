@@ -33,6 +33,7 @@ export default defineConfig({
                     {text: 'CentOs安装Docker', link: '/centos-install-docker'},
                     {text: 'CentOs网络', link: '/docker-network'},
                     {text: 'idea连接docker', link: '/idea-connects-docker'},
+                    {text: 'docker安装mysql', link: '/docker-install-mysql'},
                 ]
             }
         ],
