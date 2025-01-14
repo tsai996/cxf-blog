@@ -31,6 +31,11 @@ docker run -id
 -e MYSQL_ROOT_PASSWORD=root 
 mysql:5.7
 ```
+```shell
+## 完整例子
+docker run -id -p 3306:3306 --name=c_mysql --restart always --net net-test -v $PWD/conf:/etc/mysql/conf.d -v $PWD/logs:/logs -v $PWD/data:/var/lib/mysql -v /etc/localtime:/etc/localtime:ro -e MYSQL_ROOT_PASSWORD="#15606613391"  mysql:8.0.30
+```
+
 参数说明：
 - -p 3307:3306：将容器的 3306 端口映射到宿主机的 3307 端口。
 - -v $PWD/conf:/etc/mysql/conf.d：将主机当前目录下的 conf/my.cnf 挂载到容器的 /etc/mysql/my.cnf。配置目录
