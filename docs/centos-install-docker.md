@@ -17,6 +17,9 @@ yum install -y yum-utils device-mapper-persistent-data lvm2
 ```
 ## 5. 设置yum源
 ```shell
+## 阿里源
+yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
+## 官方源
 yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 ```
 ## 6. 安装docker，出现输入的界面都按 y
